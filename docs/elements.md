@@ -1,11 +1,11 @@
-# Elements
+# Elementos
 
-Elements are things inside your component.
+Elementos são coisas dentro do seu componente.
 
 ![](images/component-elements.png)
 
-## Naming elements
-Each component may have elements. They should have classes that are only **one word**.
+## Nomeando Elementos
+Cada componente pode ter vários elementos. Elementos devem ter a classe definida com **uma palavra**.
 
 ```scss
 .search-form {
@@ -14,8 +14,8 @@ Each component may have elements. They should have classes that are only **one w
 }
 ```
 
-## Element selectors
-Prefer to use the `>` child selector whenever possible. This prevents bleeding through nested components, and performs better than descendant selectors.
+## Seletores para elementos
+Prefira usar o seletor de filho `>` sempre que possível. Isso previne que o estilo afete outros componentes aninhados e tem uma performance melhor do que os seletores de descendentes.
 
 ```scss
 .article-card {
@@ -24,8 +24,8 @@ Prefer to use the `>` child selector whenever possible. This prevents bleeding t
 }
 ```
 
-## On multiple words
-For those that need two or more words, concatenate them without dashes or underscores.
+## Lidando com múltiplas palavras
+Para aqueles que precisam de duas ou mais palavras, concatená-las sem traços ou underscores.
 
 ```scss
 .profile-box {
@@ -35,8 +35,8 @@ For those that need two or more words, concatenate them without dashes or unders
 }
 ```
 
-## Avoid tag selectors
-Use classnames whenever possible. Tag selectors are fine, but they may come at a small performance penalty and may not be as descriptive.
+## Evite seletores de tag
+Use classes sempre que possível. Seletores de tag são bons, mas eles tem uma performance menor e podem não ser tão descritivos assim.
 
 ```scss
 .article-card {
@@ -45,6 +45,6 @@ Use classnames whenever possible. Tag selectors are fine, but they may come at a
 }
 ```
 
-Not all elements should always look the same. Variants can help.
-[Continue →](variants.md)
+Nem todos os elementos são sempre iguais. Variantes podem ajudar.
+[Continuar →](variants.md)
 <!-- {p:.pull-box} -->
