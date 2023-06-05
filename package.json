@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "true",
-    "build": "docpress b"
+    "build": "docpress b",
+    "start": "docpress serve"
   },
   "repository": {
     "type": "git",
