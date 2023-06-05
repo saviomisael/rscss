@@ -4,7 +4,7 @@
 - **Componentes**
   - [Sobre componentes](components.md)
   - [Elementos](elements.md)
-  - [Variações](variants.md)
+  - [Variantes](variants.md)
   - [Componentes aninhados](nested-components.md)
   - [Layouts](layouts.md)
   - [Helpers](helpers.md)
