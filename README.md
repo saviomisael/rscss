@@ -8,24 +8,24 @@
 
 <!-- {h1:.massive-header.-with-tagline} -->
 
-> Styling CSS without losing your sanity
+> Estilizando CSS sem perder a sanidade
 
-Reasonable System for CSS Stylesheet Structure.<br>
-A set of simple ideas to guide your process of building maintainable CSS.
+Sistema Razoável para estruturar arquivos CSS.<br>
+Um conjunto simples de ideias para guiar seu processo de construir CSS manutenível.
 
-Introduction
+Introdução
 ------------
 
-Any CSS greater than 1000 lines will get unwieldy. You'll eventually run into these common pitfalls:
+Qualquer arquivo CSS maior do que 1000 linhas vai ficar difícil de organizar. Você eventualmente cairá em algum desses erros:
 
-* "What does this class mean?"
-* "Is this class still being used?"
-* "If I make a new class `green`, will there be a clash?"
+* "O que essa classe significa?"
+* "Essa classe ainda está sendo usada?"
+* "Se eu criar uma nova classe `green`, ocorrerá uma quebra de código?"
 
-**rscss** is an attempt to make sense of all these. It is not a framework. It's simply a set of ideas to guide your process of building maintainable CSS for any modern website or application.
+**rscss** é uma tentativa de trazer sentido para todas essas questões. Isso não é um framework. Isso é um conjunto simples de ideias que irão guiar seu processo de desenvolver CSS manutenível para qualquer site moderno ou aplicação.
 
-Let's get started by learning about components.
-[Continue →](docs/components.md)
+Vamos continuar o aprendizado falando sobre componentes.
+[Continuar →](docs/components.md)
 <!-- {p:.pull-box} -->
 
 ----
