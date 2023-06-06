@@ -19,8 +19,8 @@ Prefira usar o seletor de filho `>` sempre que possível. Isso previne que o est
 
 ```scss
 .article-card {
-  .title     { /* okay */ }
-  > .author  { /* ✓ better */ }
+  .title     { /* legal */ }
+  > .author  { /* ✓ melhor */ }
 }
 ```
 
@@ -40,8 +40,8 @@ Use classes sempre que possível. Seletores de tag são bons, mas eles tem uma p
 
 ```scss
 .article-card {
-  > h3    { /* ✗ avoid */ }
-  > .name { /* ✓ better */ }
+  > h3    { /* ✗ evite */ }
+  > .name { /* ✓ melhor */ }
 }
 ```
 
