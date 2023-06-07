@@ -1,13 +1,13 @@
-# Other resources
+# Outros recursos
 
- * [ITCSS](https://speakerdeck.com/dafed/managing-css-projects-with-itcss#49) ("Inverted Triangle CSS") is a nice complement to any rscss structure.
- * [rsjs](http://ricostacruz.com/rsjs/) ("Reasonable Standard of JavaScript Structure") is a work-in-progress document for structuring JavaScript on basic sites.
+ * [ITCSS](https://speakerdeck.com/dafed/managing-css-projects-with-itcss#49) ("Inverted Triangle CSS") é um ótimo complemento para a estrutura do rscss.
+ * [rsjs](http://ricostacruz.com/rsjs/) ("Reasonable Standard of JavaScript Structure") é um documento em progresso para estruturar JavaScript em sites básicos.
 
-Other solutions
+Outras soluções
 ---------------
 
 ### BEM
-[BEM] is nice, but some may be irked at its unconventional syntax. RSCSS pretty much follows BEM conventions, only with a different syntax.
+[BEM] é ótimo, mas algumas pessoas podem achá-lo irritante pela sua sintaxe não convencional. RSCSS é bem parecido com BEM, porém com uma sintaxe diferente.
 
 ```html
 <!-- BEM -->
@@ -25,16 +25,16 @@ Other solutions
 </form>
 ```
 
-## Terminologies
+## Terminologias
 
-The same concepts exist in similar ways in other CSS structuring ideologies.
+Os mesmos conceitos existem em formas parecidas de estruturar o CSS.
 
 | RSCSS     | BEM      | SMACSS        |
 | ---       | ---      | ---           |
-| Component | Block    | Module        |
-| Element   | Element  | Sub-Component |
+| Componente | Bloco    | Módulo        |
+| Elemento   | Elemento  | Sub-Componente |
 | Layout    | ?        | Layout        |
-| Variant   | Modifier | Sub-Module & State |
+| Variante   | Modificador | Sub-Módulo & Estado |
 
 [BEM]: http://bem.info/
 [Smacss]: https://smacss.com/
