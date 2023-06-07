@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <script src="assets/script.js?t=820b7ffa"></script>
+    <title>Erros</title>
+    <meta name="viewport" content="width=device-width">
+    <script>
+      if (false || window.location.hostname.indexOf("rscss.io") === window.location.hostname.length - 8) {
+        (function(d,o,c,p,r,e,s){d['GoogleAnalyticsObject']=r;d[r]=d[r]||function(){(d[r].q=d[r].q||[]).push(arguments)},d[r].l=1*new Date();e=o.createElement(c),s=o.getElementsByTagName(c)[0];e.async=1;e.src=p;s.parentNode.insertBefore(e,s)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create',"UA-70062028-1",'auto')
+      }
+    </script>
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-pitfalls">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/rstacruz/rscss" data-title="rstacruz/rscss" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="erros">Erros</h1>
+<h2 id="elementos-com-o-mesmo-nome-em-componentes-aninhados">Elementos com o mesmo nome em componentes aninhados</h2>
+<p>Tome cuidado com elementos de componentes aninhados terem o mesmo nome que elementos do componente pai.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="pl-s">&apos;article-link&apos;</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="pl-s">&apos;vote-box&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="pl-s">&apos;up&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="pl-s">&apos;down&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="pl-s">&apos;count&apos;</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="pl-s">&apos;title&apos;</span>&gt;</span>Article title<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="pl-s">&apos;count&apos;</span>&gt;</span>3 votes<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-scss"><span class="hljs-selector-class">.article-link</span> {
+  &gt; <span class="hljs-selector-class">.title</span> { <span class="pl-c">/* ... */</span> }
+  &gt; <span class="hljs-selector-class">.count</span> { <span class="pl-c">/* ... (!!!) */</span> }
+}
+
+<span class="hljs-selector-class">.vote-box</span> {
+  &gt; <span class="hljs-selector-class">.up</span> { <span class="pl-c">/* ... */</span> }
+  &gt; <span class="hljs-selector-class">.down</span> { <span class="pl-c">/* ... */</span> }
+  &gt; <span class="hljs-selector-class">.count</span> { <span class="pl-c">/* ... */</span> }
+}
+</code></pre>
+<p>Nesse caso, se <code>.article-link &gt; .count</code> n&#xE3;o usasse o seletor de filho <code>&gt;</code>, ele tamb&#xE9;m teria aplicado os estilos para o elemento <code>.vote-box .count</code>. Isso &#xE9; uma das raz&#xF5;es pela qual &#xE9; prefer&#xED;vel usar o seletor de filho.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="css-structure.html"><span class="title">Estrutura do CSS</span></a></div>
+          <div class="right"><a href="apprehensions.html"><span class="label">Next: </span><span class="title">Preocupações</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="index.html" class="link title  link-index">rscss</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Componentes</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="components.html" class="link title  link-components">Sobre componentes</a>
+                </li>
+                <li class="menu-item -level-2"><a href="elements.html" class="link title  link-elements">Elementos</a>
+                </li>
+                <li class="menu-item -level-2"><a href="variants.html" class="link title  link-variants">Variantes</a>
+                </li>
+                <li class="menu-item -level-2"><a href="nested-components.html" class="link title  link-nested-components">Componentes aninhados</a>
+                </li>
+                <li class="menu-item -level-2"><a href="layouts.html" class="link title  link-layouts">Layouts</a>
+                </li>
+                <li class="menu-item -level-2"><a href="helpers.html" class="link title  link-helpers">Helpers</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Estrutura</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="css-structure.html" class="link title  link-css-structure">Estrutura do CSS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Observações</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="pitfalls.html" class="link title -active link-pitfalls">Erros</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a href="#elementos-com-o-mesmo-nome-em-componentes-aninhados" class="hlink link-elementos-com-o-mesmo-nome-em-componentes-aninhados">Elementos com o mesmo nome em componentes aninhados</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a href="apprehensions.html" class="link title  link-apprehensions">Preocupações</a>
+                </li>
+                <li class="menu-item -level-2"><a href="other-resources.html" class="link title  link-other-resources">Outros recursos</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="summary.html" class="link title  link-summary">Resumo</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Recursos Externos</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="translations.html" class="link title  link-translations">Traduções</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

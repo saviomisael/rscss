@@ -1,5 +1,4 @@
 node_modules
-_docpress
 .dockerignore
 Dockerfile
 docker-compose.yaml
