@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <script src="assets/script.js?t=820b7ffa"></script>
+    <title>Helpers</title>
+    <meta name="viewport" content="width=device-width">
+    <script>
+      if (false || window.location.hostname.indexOf("rscss.io") === window.location.hostname.length - 8) {
+        (function(d,o,c,p,r,e,s){d['GoogleAnalyticsObject']=r;d[r]=d[r]||function(){(d[r].q=d[r].q||[]).push(arguments)},d[r].l=1*new Date();e=o.createElement(c),s=o.getElementsByTagName(c)[0];e.async=1;e.src=p;s.parentNode.insertBefore(e,s)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create',"UA-70062028-1",'auto')
+      }
+    </script>
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-helpers">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/rstacruz/rscss" data-title="rstacruz/rscss" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="helpers">Helpers</h1>
+<p>De modo geral, essas classes significam sobrescrita de valores, coloque-as em um arquivo separado e o nome da classe inicia com underscore. Elas tipicamente usam <em>!important</em>. Use esse tipo de classe de maneira <em>bem</em> cuidadosa.</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">._unmargin</span> { <span class="pl-e">margin</span>: <span class="hljs-number">0</span> <span class="hljs-meta">!important</span>; }
+<span class="hljs-selector-class">._center</span> { <span class="pl-e">text-align</span>: center <span class="hljs-meta">!important</span>; }
+<span class="hljs-selector-class">._pull-left</span> { <span class="pl-e">float</span>: left <span class="hljs-meta">!important</span>; }
+<span class="hljs-selector-class">._pull-right</span> { <span class="pl-e">float</span>: right <span class="hljs-meta">!important</span>; }
+</code></pre>
+<h2 id="nomeando-helpers">Nomeando helpers</h2>
+<p>Classes devem ter o underscore prefixado. Isso ir&#xE1; facilitar para diferenci&#xE1;-las dos modificadores definidos nos componentes. Underscores podem parecer feios, mas essa &#xE9; a inten&#xE7;&#xE3;o e o uso de helpers em excesso deve ser desencorajado.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="pl-s">&apos;order-graphs -slim _unmargin&apos;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h2 id="organizando-helpers">Organizando helpers</h2>
+<p>Coloque todos os helpers em um arquivo chamado <code>helpers</code>. Enquanto voc&#xEA; pode separ&#xE1;-los em v&#xE1;rios arquivos, &#xE9; prefer&#xED;vel que voc&#xEA; mantenha o n&#xFA;mero de helpers o menor poss&#xED;vel.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="layouts.html"><span class="title">Layouts</span></a></div>
+          <div class="right"><a href="css-structure.html"><span class="label">Next: </span><span class="title">Estrutura do CSS</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="index.html" class="link title  link-index">rscss</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Componentes</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="components.html" class="link title  link-components">Sobre componentes</a>
+                </li>
+                <li class="menu-item -level-2"><a href="elements.html" class="link title  link-elements">Elementos</a>
+                </li>
+                <li class="menu-item -level-2"><a href="variants.html" class="link title  link-variants">Variantes</a>
+                </li>
+                <li class="menu-item -level-2"><a href="nested-components.html" class="link title  link-nested-components">Componentes aninhados</a>
+                </li>
+                <li class="menu-item -level-2"><a href="layouts.html" class="link title  link-layouts">Layouts</a>
+                </li>
+                <li class="menu-item -level-2"><a href="helpers.html" class="link title -active link-helpers">Helpers</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a href="#nomeando-helpers" class="hlink link-nomeando-helpers">Nomeando helpers</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#organizando-helpers" class="hlink link-organizando-helpers">Organizando helpers</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Estrutura</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="css-structure.html" class="link title  link-css-structure">Estrutura do CSS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Observações</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="pitfalls.html" class="link title  link-pitfalls">Erros</a>
+                </li>
+                <li class="menu-item -level-2"><a href="apprehensions.html" class="link title  link-apprehensions">Preocupações</a>
+                </li>
+                <li class="menu-item -level-2"><a href="other-resources.html" class="link title  link-other-resources">Outros recursos</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="summary.html" class="link title  link-summary">Resumo</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Recursos Externos</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="translations.html" class="link title  link-translations">Traduções</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

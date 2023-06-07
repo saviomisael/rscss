@@ -1,0 +1,466 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "rscss",
+        "source": "README.md",
+        "url": "index.html",
+        "slug": "index",
+        "headings": [
+          {
+            "title": "Introdução",
+            "depth": 2,
+            "id": "introducao"
+          }
+        ]
+      },
+      {
+        "title": "Componentes",
+        "sections": [
+          {
+            "title": "Sobre componentes",
+            "source": "docs/components.md",
+            "url": "components.html",
+            "slug": "components",
+            "headings": [
+              {
+                "title": "Nomeando componentes",
+                "depth": 2,
+                "id": "nomeando-componentes"
+              }
+            ]
+          },
+          {
+            "title": "Elementos",
+            "source": "docs/elements.md",
+            "url": "elements.html",
+            "slug": "elements",
+            "headings": [
+              {
+                "title": "Nomeando Elementos",
+                "depth": 2,
+                "id": "nomeando-elementos"
+              },
+              {
+                "title": "Seletores para elementos",
+                "depth": 2,
+                "id": "seletores-para-elementos"
+              },
+              {
+                "title": "Lidando com múltiplas palavras",
+                "depth": 2,
+                "id": "lidando-com-multiplas-palavras"
+              },
+              {
+                "title": "Evite seletores de tag",
+                "depth": 2,
+                "id": "evite-seletores-de-tag"
+              }
+            ]
+          },
+          {
+            "title": "Variantes",
+            "source": "docs/variants.md",
+            "url": "variants.html",
+            "slug": "variants",
+            "headings": [
+              {
+                "title": "Nomeando variantes",
+                "depth": 2,
+                "id": "nomeando-variantes"
+              },
+              {
+                "title": "Variantes de elementos",
+                "depth": 2,
+                "id": "variantes-de-elementos"
+              },
+              {
+                "title": "Prefixos com traços",
+                "depth": 2,
+                "id": "prefixos-com-tracos"
+              }
+            ]
+          },
+          {
+            "title": "Componentes aninhados",
+            "source": "docs/nested-components.md",
+            "url": "nested-components.html",
+            "slug": "nested-components",
+            "headings": [
+              {
+                "title": "Variantes",
+                "depth": 2,
+                "id": "variantes"
+              },
+              {
+                "title": "Simplificando componentes aninhados",
+                "depth": 2,
+                "id": "simplificando-componentes-aninhados"
+              }
+            ]
+          },
+          {
+            "title": "Layouts",
+            "source": "docs/layouts.md",
+            "url": "layouts.html",
+            "slug": "layouts",
+            "headings": [
+              {
+                "title": "Evite propriedades de posicionamento",
+                "depth": 2,
+                "id": "evite-propriedades-de-posicionamento"
+              },
+              {
+                "title": "Dimensões fixas",
+                "depth": 2,
+                "id": "dimensoes-fixas"
+              },
+              {
+                "title": "Defina posicionamento no pai",
+                "depth": 2,
+                "id": "defina-posicionamento-no-pai"
+              }
+            ]
+          },
+          {
+            "title": "Helpers",
+            "source": "docs/helpers.md",
+            "url": "helpers.html",
+            "slug": "helpers",
+            "headings": [
+              {
+                "title": "Nomeando helpers",
+                "depth": 2,
+                "id": "nomeando-helpers"
+              },
+              {
+                "title": "Organizando helpers",
+                "depth": 2,
+                "id": "organizando-helpers"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Estrutura",
+        "sections": [
+          {
+            "title": "Estrutura do CSS",
+            "source": "docs/css-structure.md",
+            "url": "css-structure.html",
+            "slug": "css-structure",
+            "headings": [
+              {
+                "title": "Um componente por arquivo",
+                "depth": 2,
+                "id": "um-componente-por-arquivo"
+              },
+              {
+                "title": "Use expressões regulares",
+                "depth": 2,
+                "id": "use-expressoes-regulares"
+              },
+              {
+                "title": "Evite aninhar componentes em componentes aninhados",
+                "depth": 2,
+                "id": "evite-aninhar-componentes-em-componentes-aninhados"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Observações",
+        "sections": [
+          {
+            "title": "Erros",
+            "source": "docs/pitfalls.md",
+            "url": "pitfalls.html",
+            "slug": "pitfalls",
+            "headings": [
+              {
+                "title": "Elementos com o mesmo nome em componentes aninhados",
+                "depth": 2,
+                "id": "elementos-com-o-mesmo-nome-em-componentes-aninhados"
+              }
+            ]
+          },
+          {
+            "title": "Preocupações",
+            "source": "docs/apprehensions.md",
+            "url": "apprehensions.html",
+            "slug": "apprehensions"
+          },
+          {
+            "title": "Outros recursos",
+            "source": "docs/other-resources.md",
+            "url": "other-resources.html",
+            "slug": "other-resources",
+            "headings": [
+              {
+                "title": "Outras soluções",
+                "depth": 2,
+                "id": "outras-solucoes",
+                "headings": [
+                  {
+                    "title": "BEM",
+                    "depth": 3,
+                    "id": "bem"
+                  }
+                ]
+              },
+              {
+                "title": "Terminologias",
+                "depth": 2,
+                "id": "terminologias"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Resumo",
+        "source": "docs/summary.md",
+        "url": "summary.html",
+        "slug": "summary"
+      },
+      {
+        "title": "Recursos Externos",
+        "sections": [
+          {
+            "title": "Traduções",
+            "source": "docs/translations.md",
+            "url": "translations.html",
+            "slug": "translations"
+          }
+        ]
+      }
+    ]
+  },
+  "index": {
+    "index.html": {
+      "source": "README.md",
+      "title": "rscss",
+      "slug": "index",
+      "headings": [
+        {
+          "title": "Introdução",
+          "depth": 2,
+          "id": "introducao"
+        }
+      ]
+    },
+    "components.html": {
+      "source": "docs/components.md",
+      "title": "Sobre componentes",
+      "slug": "components",
+      "headings": [
+        {
+          "title": "Nomeando componentes",
+          "depth": 2,
+          "id": "nomeando-componentes"
+        }
+      ]
+    },
+    "elements.html": {
+      "source": "docs/elements.md",
+      "title": "Elementos",
+      "slug": "elements",
+      "headings": [
+        {
+          "title": "Nomeando Elementos",
+          "depth": 2,
+          "id": "nomeando-elementos"
+        },
+        {
+          "title": "Seletores para elementos",
+          "depth": 2,
+          "id": "seletores-para-elementos"
+        },
+        {
+          "title": "Lidando com múltiplas palavras",
+          "depth": 2,
+          "id": "lidando-com-multiplas-palavras"
+        },
+        {
+          "title": "Evite seletores de tag",
+          "depth": 2,
+          "id": "evite-seletores-de-tag"
+        }
+      ]
+    },
+    "variants.html": {
+      "source": "docs/variants.md",
+      "title": "Variantes",
+      "slug": "variants",
+      "headings": [
+        {
+          "title": "Nomeando variantes",
+          "depth": 2,
+          "id": "nomeando-variantes"
+        },
+        {
+          "title": "Variantes de elementos",
+          "depth": 2,
+          "id": "variantes-de-elementos"
+        },
+        {
+          "title": "Prefixos com traços",
+          "depth": 2,
+          "id": "prefixos-com-tracos"
+        }
+      ]
+    },
+    "nested-components.html": {
+      "source": "docs/nested-components.md",
+      "title": "Componentes aninhados",
+      "slug": "nested-components",
+      "headings": [
+        {
+          "title": "Variantes",
+          "depth": 2,
+          "id": "variantes"
+        },
+        {
+          "title": "Simplificando componentes aninhados",
+          "depth": 2,
+          "id": "simplificando-componentes-aninhados"
+        }
+      ]
+    },
+    "layouts.html": {
+      "source": "docs/layouts.md",
+      "title": "Layouts",
+      "slug": "layouts",
+      "headings": [
+        {
+          "title": "Evite propriedades de posicionamento",
+          "depth": 2,
+          "id": "evite-propriedades-de-posicionamento"
+        },
+        {
+          "title": "Dimensões fixas",
+          "depth": 2,
+          "id": "dimensoes-fixas"
+        },
+        {
+          "title": "Defina posicionamento no pai",
+          "depth": 2,
+          "id": "defina-posicionamento-no-pai"
+        }
+      ]
+    },
+    "helpers.html": {
+      "source": "docs/helpers.md",
+      "title": "Helpers",
+      "slug": "helpers",
+      "headings": [
+        {
+          "title": "Nomeando helpers",
+          "depth": 2,
+          "id": "nomeando-helpers"
+        },
+        {
+          "title": "Organizando helpers",
+          "depth": 2,
+          "id": "organizando-helpers"
+        }
+      ]
+    },
+    "css-structure.html": {
+      "source": "docs/css-structure.md",
+      "title": "Estrutura do CSS",
+      "slug": "css-structure",
+      "headings": [
+        {
+          "title": "Um componente por arquivo",
+          "depth": 2,
+          "id": "um-componente-por-arquivo"
+        },
+        {
+          "title": "Use expressões regulares",
+          "depth": 2,
+          "id": "use-expressoes-regulares"
+        },
+        {
+          "title": "Evite aninhar componentes em componentes aninhados",
+          "depth": 2,
+          "id": "evite-aninhar-componentes-em-componentes-aninhados"
+        }
+      ]
+    },
+    "pitfalls.html": {
+      "source": "docs/pitfalls.md",
+      "title": "Erros",
+      "slug": "pitfalls",
+      "headings": [
+        {
+          "title": "Elementos com o mesmo nome em componentes aninhados",
+          "depth": 2,
+          "id": "elementos-com-o-mesmo-nome-em-componentes-aninhados"
+        }
+      ]
+    },
+    "apprehensions.html": {
+      "source": "docs/apprehensions.md",
+      "title": "Preocupações",
+      "slug": "apprehensions"
+    },
+    "other-resources.html": {
+      "source": "docs/other-resources.md",
+      "title": "Outros recursos",
+      "slug": "other-resources",
+      "headings": [
+        {
+          "title": "Outras soluções",
+          "depth": 2,
+          "id": "outras-solucoes",
+          "headings": [
+            {
+              "title": "BEM",
+              "depth": 3,
+              "id": "bem"
+            }
+          ]
+        },
+        {
+          "title": "Terminologias",
+          "depth": 2,
+          "id": "terminologias"
+        }
+      ]
+    },
+    "summary.html": {
+      "source": "docs/summary.md",
+      "title": "Resumo",
+      "slug": "summary"
+    },
+    "translations.html": {
+      "source": "docs/translations.md",
+      "title": "Traduções",
+      "slug": "translations"
+    }
+  },
+  "sources": {
+    "README.md": "index.html",
+    "docs/components.md": "components.html",
+    "docs/elements.md": "elements.html",
+    "docs/variants.md": "variants.html",
+    "docs/nested-components.md": "nested-components.html",
+    "docs/layouts.md": "layouts.html",
+    "docs/helpers.md": "helpers.html",
+    "docs/css-structure.md": "css-structure.html",
+    "docs/pitfalls.md": "pitfalls.html",
+    "docs/apprehensions.md": "apprehensions.html",
+    "docs/other-resources.md": "other-resources.html",
+    "docs/summary.md": "summary.html",
+    "docs/translations.md": "translations.html",
+    "docs/docpress.json": "docpress.json",
+    "docs/images/component-example.png": "images/component-example.png",
+    "docs/images/component-elements.png": "images/component-elements.png",
+    "docs/images/component-modifiers.png": "images/component-modifiers.png",
+    "docs/images/component-nesting.png": "images/component-nesting.png",
+    "docs/images/layouts.png": "images/layouts.png"
+  }
+}

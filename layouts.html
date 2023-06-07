@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <script src="assets/script.js?t=820b7ffa"></script>
+    <title>Layouts</title>
+    <meta name="viewport" content="width=device-width">
+    <script>
+      if (false || window.location.hostname.indexOf("rscss.io") === window.location.hostname.length - 8) {
+        (function(d,o,c,p,r,e,s){d['GoogleAnalyticsObject']=r;d[r]=d[r]||function(){(d[r].q=d[r].q||[]).push(arguments)},d[r].l=1*new Date();e=o.createElement(c),s=o.getElementsByTagName(c)[0];e.async=1;e.src=p;s.parentNode.insertBefore(e,s)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create',"UA-70062028-1",'auto')
+      }
+    </script>
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-layouts">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/rstacruz/rscss" data-title="rstacruz/rscss" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="layouts">Layouts</h1>
+<p><img src="images/layouts.png" alt></p>
+<h2 id="evite-propriedades-de-posicionamento">Evite propriedades de posicionamento</h2>
+<p>Componentes devem ser criados de forma que eles possam ser reutilizados em diferentes contextos. Evite colocar essas propriedades em componentes:</p>
+<ul>
+<li>Posicionamento (<code>position</code>, <code>top</code>, <code>left</code>, <code>right</code>, <code>bottom</code>)</li>
+<li>Floats (<code>float</code>, <code>clear</code>)</li>
+<li>Margens (<code>margin</code>)</li>
+<li>Dimens&#xF5;es (<code>width</code>, <code>height</code>) *</li>
+</ul>
+<h2 id="dimensoes-fixas">Dimens&#xF5;es fixas</h2>
+<p>Podem acontecer exce&#xE7;&#xF5;es em elementos que tem a largura ou altura fixas, como avatares e logos.</p>
+<h2 id="defina-posicionamento-no-pai">Defina posicionamento no pai</h2>
+<p>Se voc&#xEA; precisa definir essas propriedades, tente defini-las no contexto em que elas est&#xE3;o. No exemplo a seguir, perceba que a largura e o float s&#xE3;o aplicados no componente <em>list</em>, n&#xE3;o no componente em si.</p>
+<pre><code class="lang-css">.article-list {
+  &amp; {
+    @include clearfix;
+  }
+
+  &gt; .article-card {
+    width: 33.3%;
+    float: left;
+  }
+}
+
+.article-card {
+  &amp; { /* ... */ }
+  &gt; .image { /* ... */ }
+  &gt; .title { /* ... */ }
+  &gt; .category { /* ... */ }
+}
+</code></pre>
+<p class="pull-box">Como aplicar margens fora do layout? Tente isso com Helpers.
+<a href="helpers.html">Continuar &#x2192;</a></p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="nested-components.html"><span class="title">Componentes aninhados</span></a></div>
+          <div class="right"><a href="helpers.html"><span class="label">Next: </span><span class="title">Helpers</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="index.html" class="link title  link-index">rscss</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Componentes</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="components.html" class="link title  link-components">Sobre componentes</a>
+                </li>
+                <li class="menu-item -level-2"><a href="elements.html" class="link title  link-elements">Elementos</a>
+                </li>
+                <li class="menu-item -level-2"><a href="variants.html" class="link title  link-variants">Variantes</a>
+                </li>
+                <li class="menu-item -level-2"><a href="nested-components.html" class="link title  link-nested-components">Componentes aninhados</a>
+                </li>
+                <li class="menu-item -level-2"><a href="layouts.html" class="link title -active link-layouts">Layouts</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a href="#evite-propriedades-de-posicionamento" class="hlink link-evite-propriedades-de-posicionamento">Evite propriedades de posicionamento</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#dimensoes-fixas" class="hlink link-dimensoes-fixas">Dimensões fixas</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#defina-posicionamento-no-pai" class="hlink link-defina-posicionamento-no-pai">Defina posicionamento no pai</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a href="helpers.html" class="link title  link-helpers">Helpers</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Estrutura</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="css-structure.html" class="link title  link-css-structure">Estrutura do CSS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Observações</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="pitfalls.html" class="link title  link-pitfalls">Erros</a>
+                </li>
+                <li class="menu-item -level-2"><a href="apprehensions.html" class="link title  link-apprehensions">Preocupações</a>
+                </li>
+                <li class="menu-item -level-2"><a href="other-resources.html" class="link title  link-other-resources">Outros recursos</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="summary.html" class="link title  link-summary">Resumo</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Recursos Externos</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="translations.html" class="link title  link-translations">Traduções</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>
